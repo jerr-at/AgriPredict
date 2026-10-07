@@ -1,0 +1,78 @@
+=== 1. DATASET OVERVIEW (raw file) ===
+Shape: (28242, 7)
+Area                                 str
+Item                                 str
+Year                               int64
+hg/ha_yield                        int64
+average_rain_fall_mm_per_year    float64
+pesticides_tonnes                float64
+avg_temp                         float64
+
+Items (crops) in raw file:
+Item
+Potatoes                4276
+Maize                   4121
+Wheat                   3857
+Rice, paddy             3388
+Soybeans                3223
+Sorghum                 3039
+Sweet potatoes          2890
+Cassava                 2045
+Yams                     847
+Plantains and others     556
+
+=== 2. CLEANING LOG (rice only) ===
+raw_rows: 28242
+raw_columns: 7
+rice_rows: 3388
+exact_duplicates_removed: 297
+missing_values_rice: 0
+max_distinct_yield_within_country_year: 1
+max_distinct_rainfall_within_country_year: 1
+max_distinct_pesticides_within_country_year: 1
+country_years_with_varying_temperature: 460
+repeated_rows_collapsed: 1589
+rows_after_aggregation: 1502
+sanity_rows_removed: 0
+final_rows: 1502
+countries: 68
+year_min: 1990
+year_max: 2013
+years_missing_in_range: [2003]
+
+=== 3. MISSING VALUES (raw file) ===
+Area                             0
+Item                             0
+Year                             0
+hg/ha_yield                      0
+average_rain_fall_mm_per_year    0
+pesticides_tonnes                0
+avg_temp                         0
+
+=== 4. DESCRIPTIVE STATISTICS (cleaned rice data) ===
+                    count       mean        std       min       25%       50%        75%        max
+Year               1502.0   2001.497      7.074  1990.000  1995.000  2001.000   2008.000    2013.00
+rainfall_mm        1502.0   1221.097    780.586    51.000   608.000  1131.500   1712.000    3240.00
+pesticides_tonnes  1502.0  16443.811  34229.479     0.040   272.778  2961.365  15674.135  367778.00
+avg_temp           1502.0     20.828      6.105     3.570    16.708    21.435     26.360      30.42
+yield_t_ha         1502.0      3.754      1.935     0.203     2.287     3.355      4.893      10.39
+
+=== 5. OUTLIER CHECK (IQR rule, reported only - values are real) ===
+rainfall_mm: 0 values outside [-1048.00, 3368.00]
+pesticides_tonnes: 216 values outside [-22829.26, 38776.17]
+avg_temp: 0 values outside [2.23, 40.84]
+yield_t_ha: 26 values outside [-1.62, 8.80]
+
+=== 5b. DATA FACTS THAT AFFECT MODELLING (computed from the cleaned data) ===
+Distinct rainfall values per country (max over countries): 1  -> rainfall is ONE fixed value per country, so it overlaps with country identity
+Records per country: min 2, median 23, max 23; countries with < 10 records: Albania, Mauritius, Sudan
+India records: 23
+Mean yield across countries: 1990 = 3.29 t/ha -> 2013 = 4.40 t/ha (upward trend; why Year is a feature)
+
+=== 6. CORRELATION MATRIX ===
+                    Year  rainfall_mm  pesticides_tonnes  avg_temp  yield_t_ha
+Year               1.000       -0.005              0.086     0.015       0.191
+rainfall_mm       -0.005        1.000              0.044     0.415      -0.121
+pesticides_tonnes  0.086        0.044              1.000    -0.172       0.277
+avg_temp           0.015        0.415             -0.172     1.000      -0.307
+yield_t_ha         0.191       -0.121              0.277    -0.307       1.000

@@ -1,0 +1,2636 @@
+{
+  "crop": "Rice (paddy)",
+  "target": "yield_t_ha",
+  "target_description": "Rice (paddy) yield per hectare",
+  "unit": "tonnes/hectare",
+  "unit_conversion": "Original column hg/ha. 1 hg = 100 g = 0.1 kg = 0.0001 t, so t/ha = hg/ha / 10,000. The model is trained on t/ha directly; predictions are NOT converted again.",
+  "features": [
+    "Area",
+    "Year",
+    "rainfall_mm",
+    "pesticides_tonnes",
+    "avg_temp"
+  ],
+  "feature_labels": {
+    "Area": "Country",
+    "Year": "Year",
+    "rainfall_mm": "Average annual rainfall (mm)",
+    "pesticides_tonnes": "Pesticide use (tonnes/year, national total)",
+    "avg_temp": "Average temperature (\u00b0C)"
+  },
+  "categorical_features": [
+    "Area"
+  ],
+  "numeric_features": [
+    "Year",
+    "rainfall_mm",
+    "pesticides_tonnes",
+    "avg_temp"
+  ],
+  "countries": [
+    "Albania",
+    "Algeria",
+    "Angola",
+    "Argentina",
+    "Australia",
+    "Azerbaijan",
+    "Bangladesh",
+    "Brazil",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burundi",
+    "Cameroon",
+    "Central African Republic",
+    "Chile",
+    "Colombia",
+    "Dominican Republic",
+    "Ecuador",
+    "Egypt",
+    "El Salvador",
+    "France",
+    "Ghana",
+    "Greece",
+    "Guatemala",
+    "Guinea",
+    "Guyana",
+    "Haiti",
+    "Honduras",
+    "Hungary",
+    "India",
+    "Indonesia",
+    "Iraq",
+    "Italy",
+    "Jamaica",
+    "Japan",
+    "Kazakhstan",
+    "Kenya",
+    "Madagascar",
+    "Malawi",
+    "Malaysia",
+    "Mali",
+    "Mauritania",
+    "Mauritius",
+    "Mexico",
+    "Morocco",
+    "Mozambique",
+    "Nepal",
+    "Nicaragua",
+    "Niger",
+    "Pakistan",
+    "Papua New Guinea",
+    "Peru",
+    "Portugal",
+    "Romania",
+    "Rwanda",
+    "Senegal",
+    "South Africa",
+    "Spain",
+    "Sri Lanka",
+    "Sudan",
+    "Suriname",
+    "Tajikistan",
+    "Thailand",
+    "Turkey",
+    "Uganda",
+    "Ukraine",
+    "Uruguay",
+    "Zambia",
+    "Zimbabwe"
+  ],
+  "numeric_ranges": {
+    "Year": {
+      "min": 1990.0,
+      "5%": 1991.0,
+      "50%": 2001.0,
+      "95%": 2012.0,
+      "max": 2013.0
+    },
+    "rainfall_mm": {
+      "min": 51.0,
+      "5%": 151.0,
+      "50%": 1131.5,
+      "95%": 2702.0,
+      "max": 3240.0
+    },
+    "pesticides_tonnes": {
+      "min": 0.04,
+      "5%": 26.310499999999998,
+      "50%": 2961.365,
+      "95%": 78727.52750000001,
+      "max": 367778.0
+    },
+    "avg_temp": {
+      "min": 3.57,
+      "5%": 9.460500000000001,
+      "50%": 21.435000000000002,
+      "95%": 27.87,
+      "max": 30.42
+    }
+  },
+  "country_stats": {
+    "Albania": {
+      "n_records": 4,
+      "yield_p25": 2.723675,
+      "yield_median": 3.4269,
+      "yield_p75": 4.04465,
+      "rainfall_mm": 1485.0,
+      "pesticides_tonnes": 121.0,
+      "avg_temp": 16.055,
+      "ranges": {
+        "Year": [
+          1990.0,
+          1993.0
+        ],
+        "rainfall_mm": [
+          1485.0,
+          1485.0
+        ],
+        "pesticides_tonnes": [
+          121.0,
+          121.0
+        ],
+        "avg_temp": [
+          15.36,
+          16.37
+        ]
+      },
+      "latest": {
+        "Year": 1993,
+        "rainfall_mm": 1485.0,
+        "pesticides_tonnes": 121.0,
+        "avg_temp": 16.05,
+        "yield_t_ha": 4.1786
+      }
+    },
+    "Algeria": {
+      "n_records": 23,
+      "yield_p25": 1.3213500000000002,
+      "yield_median": 1.5,
+      "yield_p75": 1.87295,
+      "rainfall_mm": 89.0,
+      "pesticides_tonnes": 1828.92,
+      "avg_temp": 17.59,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          89.0,
+          89.0
+        ],
+        "pesticides_tonnes": [
+          322.84,
+          17379.76
+        ],
+        "avg_temp": [
+          16.26,
+          18.13
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 89.0,
+        "pesticides_tonnes": 17278.65,
+        "avg_temp": 17.65,
+        "yield_t_ha": 1.7778
+      }
+    },
+    "Angola": {
+      "n_records": 23,
+      "yield_p25": 0.7553000000000001,
+      "yield_median": 0.9512,
+      "yield_p75": 1.3577500000000002,
+      "rainfall_mm": 1010.0,
+      "pesticides_tonnes": 40.0,
+      "avg_temp": 24.24,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1010.0,
+          1010.0
+        ],
+        "pesticides_tonnes": [
+          23.0,
+          336.0
+        ],
+        "avg_temp": [
+          23.96,
+          24.96
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1010.0,
+        "pesticides_tonnes": 40.0,
+        "avg_temp": 24.55,
+        "yield_t_ha": 1.2744
+      }
+    },
+    "Argentina": {
+      "n_records": 23,
+      "yield_p25": 4.905200000000001,
+      "yield_median": 5.733700000000001,
+      "yield_p75": 6.6110500000000005,
+      "rainfall_mm": 591.0,
+      "pesticides_tonnes": 63700.17,
+      "avg_temp": 17.75,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          591.0,
+          591.0
+        ],
+        "pesticides_tonnes": [
+          26156.0,
+          171945.54
+        ],
+        "avg_temp": [
+          16.665,
+          18.415
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 591.0,
+        "pesticides_tonnes": 171945.54,
+        "avg_temp": 16.665,
+        "yield_t_ha": 6.7187
+      }
+    },
+    "Australia": {
+      "n_records": 23,
+      "yield_p25": 8.257650000000002,
+      "yield_median": 8.8,
+      "yield_p75": 9.234300000000001,
+      "rainfall_mm": 534.0,
+      "pesticides_tonnes": 34091.0,
+      "avg_temp": 16.648333333333333,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          534.0,
+          534.0
+        ],
+        "pesticides_tonnes": [
+          17866.0,
+          48687.88
+        ],
+        "avg_temp": [
+          15.905000000000001,
+          17.125
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 534.0,
+        "pesticides_tonnes": 45177.18,
+        "avg_temp": 17.088333333333335,
+        "yield_t_ha": 10.2177
+      }
+    },
+    "Azerbaijan": {
+      "n_records": 21,
+      "yield_p25": 2.2249000000000003,
+      "yield_median": 3.3886000000000003,
+      "yield_p75": 4.4415000000000004,
+      "rainfall_mm": 447.0,
+      "pesticides_tonnes": 148.68,
+      "avg_temp": 12.66,
+      "ranges": {
+        "Year": [
+          1992.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          447.0,
+          447.0
+        ],
+        "pesticides_tonnes": [
+          148.68,
+          516.35
+        ],
+        "avg_temp": [
+          10.53,
+          14.12
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 447.0,
+        "pesticides_tonnes": 489.8,
+        "avg_temp": 14.12,
+        "yield_t_ha": 2.2808
+      }
+    },
+    "Bangladesh": {
+      "n_records": 23,
+      "yield_p25": 2.7308000000000003,
+      "yield_median": 3.4836,
+      "yield_p75": 4.1137,
+      "rainfall_mm": 2666.0,
+      "pesticides_tonnes": 3170.0,
+      "avg_temp": 26.09,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          2666.0,
+          2666.0
+        ],
+        "pesticides_tonnes": [
+          1266.0,
+          15330.16
+        ],
+        "avg_temp": [
+          25.55,
+          26.65
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 2666.0,
+        "pesticides_tonnes": 15330.16,
+        "avg_temp": 26.59,
+        "yield_t_ha": 4.5317
+      }
+    },
+    "Brazil": {
+      "n_records": 23,
+      "yield_p25": 2.5433000000000003,
+      "yield_median": 3.2405,
+      "yield_p75": 4.003450000000001,
+      "rainfall_mm": 1761.0,
+      "pesticides_tonnes": 145552.0,
+      "avg_temp": 23.36,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1761.0,
+          1761.0
+        ],
+        "pesticides_tonnes": [
+          49695.0,
+          367778.0
+        ],
+        "avg_temp": [
+          23.02111111111111,
+          23.805555555555557
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1761.0,
+        "pesticides_tonnes": 367778.0,
+        "avg_temp": 23.29111111111111,
+        "yield_t_ha": 5.0071
+      }
+    },
+    "Bulgaria": {
+      "n_records": 23,
+      "yield_p25": 3.4326,
+      "yield_median": 4.4801,
+      "yield_p75": 4.9498,
+      "rainfall_mm": 608.0,
+      "pesticides_tonnes": 2747.25,
+      "avg_temp": 9.51,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          608.0,
+          608.0
+        ],
+        "pesticides_tonnes": [
+          1197.0,
+          3906.0
+        ],
+        "avg_temp": [
+          8.14,
+          11.26
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 608.0,
+        "pesticides_tonnes": 1197.0,
+        "avg_temp": 11.26,
+        "yield_t_ha": 5.4945
+      }
+    },
+    "Burkina Faso": {
+      "n_records": 23,
+      "yield_p25": 1.8813,
+      "yield_median": 2.0238,
+      "yield_p75": 2.3245,
+      "rainfall_mm": 748.0,
+      "pesticides_tonnes": 75.44,
+      "avg_temp": 28.77,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          748.0,
+          748.0
+        ],
+        "pesticides_tonnes": [
+          1.28,
+          843.0
+        ],
+        "avg_temp": [
+          28.0,
+          29.41
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 748.0,
+        "pesticides_tonnes": 843.0,
+        "avg_temp": 29.41,
+        "yield_t_ha": 2.1993
+      }
+    },
+    "Burundi": {
+      "n_records": 23,
+      "yield_p25": 2.90975,
+      "yield_median": 3.1398,
+      "yield_p75": 3.2654500000000004,
+      "rainfall_mm": 1274.0,
+      "pesticides_tonnes": 117.56,
+      "avg_temp": 21.32,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1274.0,
+          1274.0
+        ],
+        "pesticides_tonnes": [
+          72.56,
+          956.06
+        ],
+        "avg_temp": [
+          20.97,
+          22.29
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1274.0,
+        "pesticides_tonnes": 956.06,
+        "avg_temp": 21.53,
+        "yield_t_ha": 1.913
+      }
+    },
+    "Cameroon": {
+      "n_records": 23,
+      "yield_p25": 1.26605,
+      "yield_median": 2.9000000000000004,
+      "yield_p75": 3.2259,
+      "rainfall_mm": 1604.0,
+      "pesticides_tonnes": 813.77,
+      "avg_temp": 25.21,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1604.0,
+          1604.0
+        ],
+        "pesticides_tonnes": [
+          48.35,
+          1372.47
+        ],
+        "avg_temp": [
+          24.6,
+          25.7
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1604.0,
+        "pesticides_tonnes": 1372.47,
+        "avg_temp": 25.45,
+        "yield_t_ha": 1.1641000000000001
+      }
+    },
+    "Central African Republic": {
+      "n_records": 23,
+      "yield_p25": 1.4515,
+      "yield_median": 1.5,
+      "yield_p75": 1.63645,
+      "rainfall_mm": 1342.0,
+      "pesticides_tonnes": 22.87,
+      "avg_temp": 25.45,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1342.0,
+          1342.0
+        ],
+        "pesticides_tonnes": [
+          0.04,
+          22.87
+        ],
+        "avg_temp": [
+          24.81,
+          26.17
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1342.0,
+        "pesticides_tonnes": 22.87,
+        "avg_temp": 25.69,
+        "yield_t_ha": 1.8665
+      }
+    },
+    "Chile": {
+      "n_records": 23,
+      "yield_p25": 4.1889,
+      "yield_median": 4.7704,
+      "yield_p75": 5.21565,
+      "rainfall_mm": 1522.0,
+      "pesticides_tonnes": 13156.09,
+      "avg_temp": 9.71,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1522.0,
+          1522.0
+        ],
+        "pesticides_tonnes": [
+          9830.72,
+          15373.0
+        ],
+        "avg_temp": [
+          8.91,
+          10.23
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1522.0,
+        "pesticides_tonnes": 9830.72,
+        "avg_temp": 9.505,
+        "yield_t_ha": 6.205100000000001
+      }
+    },
+    "Colombia": {
+      "n_records": 23,
+      "yield_p25": 4.0877,
+      "yield_median": 4.5717,
+      "yield_p75": 4.8005,
+      "rainfall_mm": 3240.0,
+      "pesticides_tonnes": 51435.13,
+      "avg_temp": 24.965,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          3240.0,
+          3240.0
+        ],
+        "pesticides_tonnes": [
+          14961.81,
+          117881.45
+        ],
+        "avg_temp": [
+          24.299999999999997,
+          25.37
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 3240.0,
+        "pesticides_tonnes": 54563.38,
+        "avg_temp": 25.225,
+        "yield_t_ha": 3.8371000000000004
+      }
+    },
+    "Dominican Republic": {
+      "n_records": 23,
+      "yield_p25": 4.52725,
+      "yield_median": 4.7651,
+      "yield_p75": 4.82405,
+      "rainfall_mm": 1410.0,
+      "pesticides_tonnes": 4971.0,
+      "avg_temp": 26.77,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1410.0,
+          1410.0
+        ],
+        "pesticides_tonnes": [
+          3449.0,
+          7182.0
+        ],
+        "avg_temp": [
+          26.299999999999997,
+          27.15
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1410.0,
+        "pesticides_tonnes": 6316.61,
+        "avg_temp": 26.695,
+        "yield_t_ha": 4.512300000000001
+      }
+    },
+    "Ecuador": {
+      "n_records": 23,
+      "yield_p25": 3.50145,
+      "yield_median": 3.7385,
+      "yield_p75": 4.13125,
+      "rainfall_mm": 2274.0,
+      "pesticides_tonnes": 7953.420000000001,
+      "avg_temp": 20.513333333333335,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          2274.0,
+          2274.0
+        ],
+        "pesticides_tonnes": [
+          1302.49,
+          31637.12
+        ],
+        "avg_temp": [
+          19.886666666666667,
+          21.233333333333334
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 2274.0,
+        "pesticides_tonnes": 6471.77,
+        "avg_temp": 20.303333333333335,
+        "yield_t_ha": 3.821
+      }
+    },
+    "Egypt": {
+      "n_records": 23,
+      "yield_p25": 8.2133,
+      "yield_median": 9.2833,
+      "yield_p75": 9.58975,
+      "rainfall_mm": 51.0,
+      "pesticides_tonnes": 5471.0,
+      "avg_temp": 21.585,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          51.0,
+          51.0
+        ],
+        "pesticides_tonnes": [
+          4175.0,
+          13991.0
+        ],
+        "avg_temp": [
+          20.6,
+          23.09
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 51.0,
+        "pesticides_tonnes": 13653.0,
+        "avg_temp": 22.175,
+        "yield_t_ha": 9.586500000000001
+      }
+    },
+    "El Salvador": {
+      "n_records": 23,
+      "yield_p25": 4.8418,
+      "yield_median": 5.7884,
+      "yield_p75": 6.7723,
+      "rainfall_mm": 1784.0,
+      "pesticides_tonnes": 3164.62,
+      "avg_temp": 26.07,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1784.0,
+          1784.0
+        ],
+        "pesticides_tonnes": [
+          1922.78,
+          6005.08
+        ],
+        "avg_temp": [
+          25.67,
+          26.48
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1784.0,
+        "pesticides_tonnes": 6005.08,
+        "avg_temp": 26.36,
+        "yield_t_ha": 6.1615
+      }
+    },
+    "France": {
+      "n_records": 23,
+      "yield_p25": 5.144,
+      "yield_median": 5.5947000000000005,
+      "yield_p75": 5.75025,
+      "rainfall_mm": 867.0,
+      "pesticides_tonnes": 84011.0,
+      "avg_temp": 11.46,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          867.0,
+          867.0
+        ],
+        "pesticides_tonnes": [
+          61039.0,
+          114695.0
+        ],
+        "avg_temp": [
+          10.14,
+          12.33
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 867.0,
+        "pesticides_tonnes": 66497.29,
+        "avg_temp": 11.01,
+        "yield_t_ha": 3.9400000000000004
+      }
+    },
+    "Ghana": {
+      "n_records": 23,
+      "yield_p25": 1.8467,
+      "yield_median": 2.0253,
+      "yield_p75": 2.3147,
+      "rainfall_mm": 1187.0,
+      "pesticides_tonnes": 134.25,
+      "avg_temp": 26.87,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1187.0,
+          1187.0
+        ],
+        "pesticides_tonnes": [
+          65.8,
+          1575.5
+        ],
+        "avg_temp": [
+          26.47,
+          27.57
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1187.0,
+        "pesticides_tonnes": 378.97,
+        "avg_temp": 27.24,
+        "yield_t_ha": 2.6378
+      }
+    },
+    "Greece": {
+      "n_records": 23,
+      "yield_p25": 7.1673,
+      "yield_median": 7.3904000000000005,
+      "yield_p75": 7.690950000000001,
+      "rainfall_mm": 652.0,
+      "pesticides_tonnes": 8002.2,
+      "avg_temp": 18.15,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          652.0,
+          652.0
+        ],
+        "pesticides_tonnes": [
+          3404.4,
+          12083.0
+        ],
+        "avg_temp": [
+          17.07,
+          19.36
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 652.0,
+        "pesticides_tonnes": 8081.72,
+        "avg_temp": 19.36,
+        "yield_t_ha": 8.3964
+      }
+    },
+    "Guatemala": {
+      "n_records": 23,
+      "yield_p25": 2.5341500000000003,
+      "yield_median": 2.8203,
+      "yield_p75": 2.91575,
+      "rainfall_mm": 1996.0,
+      "pesticides_tonnes": 12004.33,
+      "avg_temp": 19.88,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1996.0,
+          1996.0
+        ],
+        "pesticides_tonnes": [
+          9665.14,
+          22883.17
+        ],
+        "avg_temp": [
+          19.44,
+          20.37
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1996.0,
+        "pesticides_tonnes": 20489.4,
+        "avg_temp": 20.37,
+        "yield_t_ha": 2.9387000000000003
+      }
+    },
+    "Guinea": {
+      "n_records": 23,
+      "yield_p25": 1.7108,
+      "yield_median": 1.7126000000000001,
+      "yield_p75": 1.72415,
+      "rainfall_mm": 1651.0,
+      "pesticides_tonnes": 254.42,
+      "avg_temp": 27.29,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1651.0,
+          1651.0
+        ],
+        "pesticides_tonnes": [
+          21.0,
+          877.19
+        ],
+        "avg_temp": [
+          27.02,
+          27.8
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1651.0,
+        "pesticides_tonnes": 877.19,
+        "avg_temp": 27.29,
+        "yield_t_ha": 1.25
+      }
+    },
+    "Guyana": {
+      "n_records": 23,
+      "yield_p25": 3.84615,
+      "yield_median": 4.0141,
+      "yield_p75": 4.3302000000000005,
+      "rainfall_mm": 2387.0,
+      "pesticides_tonnes": 289.9,
+      "avg_temp": 27.3,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          2387.0,
+          2387.0
+        ],
+        "pesticides_tonnes": [
+          211.83,
+          427.73
+        ],
+        "avg_temp": [
+          26.95,
+          27.87
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 2387.0,
+        "pesticides_tonnes": 358.72,
+        "avg_temp": 27.3,
+        "yield_t_ha": 4.9996
+      }
+    },
+    "Haiti": {
+      "n_records": 23,
+      "yield_p25": 2.00585,
+      "yield_median": 2.0833,
+      "yield_p75": 2.3089000000000004,
+      "rainfall_mm": 1440.0,
+      "pesticides_tonnes": 27.85,
+      "avg_temp": 27.2,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1440.0,
+          1440.0
+        ],
+        "pesticides_tonnes": [
+          6.96,
+          27.85
+        ],
+        "avg_temp": [
+          26.76,
+          27.74
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1440.0,
+        "pesticides_tonnes": 27.85,
+        "avg_temp": 27.2,
+        "yield_t_ha": 2.8789000000000002
+      }
+    },
+    "Honduras": {
+      "n_records": 23,
+      "yield_p25": 2.5696000000000003,
+      "yield_median": 3.1028000000000002,
+      "yield_p75": 4.99295,
+      "rainfall_mm": 1976.0,
+      "pesticides_tonnes": 5283.93,
+      "avg_temp": 24.61,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1976.0,
+          1976.0
+        ],
+        "pesticides_tonnes": [
+          1141.0,
+          9904.59
+        ],
+        "avg_temp": [
+          24.25,
+          25.37
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1976.0,
+        "pesticides_tonnes": 7194.91,
+        "avg_temp": 24.86,
+        "yield_t_ha": 6.1214
+      }
+    },
+    "Hungary": {
+      "n_records": 23,
+      "yield_p25": 3.1005000000000003,
+      "yield_median": 3.2950000000000004,
+      "yield_p75": 3.5179,
+      "rainfall_mm": 589.0,
+      "pesticides_tonnes": 8231.5,
+      "avg_temp": 10.67,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          589.0,
+          589.0
+        ],
+        "pesticides_tonnes": [
+          4151.0,
+          12756.0
+        ],
+        "avg_temp": [
+          9.44,
+          12.44
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 589.0,
+        "pesticides_tonnes": 7744.5,
+        "avg_temp": 12.44,
+        "yield_t_ha": 3.2727
+      }
+    },
+    "India": {
+      "n_records": 23,
+      "yield_p25": 2.8264500000000004,
+      "yield_median": 2.9756,
+      "yield_p75": 3.2437500000000004,
+      "rainfall_mm": 1083.0,
+      "pesticides_tonnes": 46195.0,
+      "avg_temp": 25.988333333333333,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1083.0,
+          1083.0
+        ],
+        "pesticides_tonnes": [
+          14485.330000000002,
+          75000.0
+        ],
+        "avg_temp": [
+          25.460588235294118,
+          26.78684210526316
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1083.0,
+        "pesticides_tonnes": 45620.0,
+        "avg_temp": 26.78684210526316,
+        "yield_t_ha": 3.607
+      }
+    },
+    "Indonesia": {
+      "n_records": 23,
+      "yield_p25": 4.3476,
+      "yield_median": 4.4322,
+      "yield_p75": 4.800000000000001,
+      "rainfall_mm": 2702.0,
+      "pesticides_tonnes": 1597.0,
+      "avg_temp": 26.911666666666665,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          2702.0,
+          2702.0
+        ],
+        "pesticides_tonnes": [
+          825.0,
+          3259.0
+        ],
+        "avg_temp": [
+          26.683333333333334,
+          27.343333333333334
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 2702.0,
+        "pesticides_tonnes": 1597.0,
+        "avg_temp": 27.015,
+        "yield_t_ha": 5.152
+      }
+    },
+    "Iraq": {
+      "n_records": 23,
+      "yield_p25": 1.9556,
+      "yield_median": 2.5,
+      "yield_p75": 3.0396,
+      "rainfall_mm": 216.0,
+      "pesticides_tonnes": 828.62,
+      "avg_temp": 21.97,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          216.0,
+          216.0
+        ],
+        "pesticides_tonnes": [
+          508.0,
+          2162.6
+        ],
+        "avg_temp": [
+          19.64,
+          23.729999999999997
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 216.0,
+        "pesticides_tonnes": 2162.6,
+        "avg_temp": 23.455,
+        "yield_t_ha": 4.716200000000001
+      }
+    },
+    "Italy": {
+      "n_records": 23,
+      "yield_p25": 5.8626000000000005,
+      "yield_median": 6.1949000000000005,
+      "yield_p75": 6.3854500000000005,
+      "rainfall_mm": 832.0,
+      "pesticides_tonnes": 81217.6,
+      "avg_temp": 10.46,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          832.0,
+          832.0
+        ],
+        "pesticides_tonnes": [
+          55633.0,
+          100596.4
+        ],
+        "avg_temp": [
+          9.665000000000001,
+          11.07
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 832.0,
+        "pesticides_tonnes": 55633.0,
+        "avg_temp": 10.82,
+        "yield_t_ha": 6.6342
+      }
+    },
+    "Jamaica": {
+      "n_records": 23,
+      "yield_p25": 1.51985,
+      "yield_median": 2.4308,
+      "yield_p75": 3.2306000000000004,
+      "rainfall_mm": 2051.0,
+      "pesticides_tonnes": 909.71,
+      "avg_temp": 27.34,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          2051.0,
+          2051.0
+        ],
+        "pesticides_tonnes": [
+          909.71,
+          1573.58
+        ],
+        "avg_temp": [
+          26.96,
+          27.8
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 2051.0,
+        "pesticides_tonnes": 909.71,
+        "avg_temp": 27.41,
+        "yield_t_ha": 4.2
+      }
+    },
+    "Japan": {
+      "n_records": 23,
+      "yield_p25": 6.339550000000001,
+      "yield_median": 6.5135000000000005,
+      "yield_p75": 6.65535,
+      "rainfall_mm": 1668.0,
+      "pesticides_tonnes": 78735.45,
+      "avg_temp": 15.274000000000001,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1668.0,
+          1668.0
+        ],
+        "pesticides_tonnes": [
+          51796.3,
+          79821.18
+        ],
+        "avg_temp": [
+          14.362,
+          16.008
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1668.0,
+        "pesticides_tonnes": 52794.3,
+        "avg_temp": 15.754,
+        "yield_t_ha": 6.728000000000001
+      }
+    },
+    "Kazakhstan": {
+      "n_records": 21,
+      "yield_p25": 2.9723,
+      "yield_median": 3.3518000000000003,
+      "yield_p75": 3.6871,
+      "rainfall_mm": 250.0,
+      "pesticides_tonnes": 7044.9,
+      "avg_temp": 5.41,
+      "ranges": {
+        "Year": [
+          1992.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          250.0,
+          250.0
+        ],
+        "pesticides_tonnes": [
+          3007.26,
+          17182.0
+        ],
+        "avg_temp": [
+          3.57,
+          7.1000000000000005
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 250.0,
+        "pesticides_tonnes": 8738.38,
+        "avg_temp": 7.1000000000000005,
+        "yield_t_ha": 3.85
+      }
+    },
+    "Kenya": {
+      "n_records": 23,
+      "yield_p25": 3.4353,
+      "yield_median": 3.9321,
+      "yield_p75": 4.0,
+      "rainfall_mm": 630.0,
+      "pesticides_tonnes": 1578.0,
+      "avg_temp": 16.66,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          630.0,
+          630.0
+        ],
+        "pesticides_tonnes": [
+          1578.0,
+          6344.0
+        ],
+        "avg_temp": [
+          15.94,
+          17.3
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 630.0,
+        "pesticides_tonnes": 1578.0,
+        "avg_temp": 16.91,
+        "yield_t_ha": 3.9955000000000003
+      }
+    },
+    "Madagascar": {
+      "n_records": 23,
+      "yield_p25": 2.0825500000000003,
+      "yield_median": 2.193,
+      "yield_p75": 2.9381500000000003,
+      "rainfall_mm": 1513.0,
+      "pesticides_tonnes": 114.51,
+      "avg_temp": 19.96,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1513.0,
+          1513.0
+        ],
+        "pesticides_tonnes": [
+          49.52,
+          507.94
+        ],
+        "avg_temp": [
+          19.34,
+          20.33
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1513.0,
+        "pesticides_tonnes": 507.94,
+        "avg_temp": 19.34,
+        "yield_t_ha": 3.9449
+      }
+    },
+    "Malawi": {
+      "n_records": 23,
+      "yield_p25": 1.5954000000000002,
+      "yield_median": 1.7576,
+      "yield_p75": 1.8878,
+      "rainfall_mm": 1181.0,
+      "pesticides_tonnes": 173.19,
+      "avg_temp": 20.62,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1181.0,
+          1181.0
+        ],
+        "pesticides_tonnes": [
+          48.28,
+          1500.27
+        ],
+        "avg_temp": [
+          19.68,
+          21.37
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1181.0,
+        "pesticides_tonnes": 1500.27,
+        "avg_temp": 19.68,
+        "yield_t_ha": 1.9174
+      }
+    },
+    "Malaysia": {
+      "n_records": 23,
+      "yield_p25": 3.0481000000000003,
+      "yield_median": 3.2385,
+      "yield_p75": 3.55565,
+      "rainfall_mm": 2875.0,
+      "pesticides_tonnes": 39406.48,
+      "avg_temp": 27.24,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          2875.0,
+          2875.0
+        ],
+        "pesticides_tonnes": [
+          39406.48,
+          61445.6
+        ],
+        "avg_temp": [
+          26.95,
+          27.89
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 2875.0,
+        "pesticides_tonnes": 61445.6,
+        "avg_temp": 27.8,
+        "yield_t_ha": 3.8763
+      }
+    },
+    "Mali": {
+      "n_records": 23,
+      "yield_p25": 1.75685,
+      "yield_median": 2.1058,
+      "yield_p75": 2.6702000000000004,
+      "rainfall_mm": 282.0,
+      "pesticides_tonnes": 15.36,
+      "avg_temp": 27.62,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          282.0,
+          282.0
+        ],
+        "pesticides_tonnes": [
+          1.52,
+          95.7
+        ],
+        "avg_temp": [
+          27.05,
+          28.53
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 282.0,
+        "pesticides_tonnes": 1.52,
+        "avg_temp": 28.53,
+        "yield_t_ha": 3.0009
+      }
+    },
+    "Mauritania": {
+      "n_records": 23,
+      "yield_p25": 3.86125,
+      "yield_median": 4.0598,
+      "yield_p75": 4.710800000000001,
+      "rainfall_mm": 92.0,
+      "pesticides_tonnes": 39.09,
+      "avg_temp": 27.82,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          92.0,
+          92.0
+        ],
+        "pesticides_tonnes": [
+          1.1,
+          702.5
+        ],
+        "avg_temp": [
+          27.23,
+          28.7
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 92.0,
+        "pesticides_tonnes": 26.41,
+        "avg_temp": 28.24,
+        "yield_t_ha": 4.9522
+      }
+    },
+    "Mauritius": {
+      "n_records": 9,
+      "yield_p25": 2.6893000000000002,
+      "yield_median": 2.9513000000000003,
+      "yield_p75": 5.0,
+      "rainfall_mm": 2041.0,
+      "pesticides_tonnes": 731.46,
+      "avg_temp": 24.31,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          2041.0,
+          2041.0
+        ],
+        "pesticides_tonnes": [
+          636.91,
+          889.0
+        ],
+        "avg_temp": [
+          23.81,
+          24.67
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 2041.0,
+        "pesticides_tonnes": 671.77,
+        "avg_temp": 24.31,
+        "yield_t_ha": 2.125
+      }
+    },
+    "Mexico": {
+      "n_records": 23,
+      "yield_p25": 4.256550000000001,
+      "yield_median": 4.510800000000001,
+      "yield_p75": 4.86135,
+      "rainfall_mm": 758.0,
+      "pesticides_tonnes": 34468.93,
+      "avg_temp": 20.262857142857143,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          758.0,
+          758.0
+        ],
+        "pesticides_tonnes": [
+          16189.88,
+          65961.1
+        ],
+        "avg_temp": [
+          19.85571428571429,
+          21.224285714285713
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 758.0,
+        "pesticides_tonnes": 59920.18,
+        "avg_temp": 21.224285714285713,
+        "yield_t_ha": 5.4252
+      }
+    },
+    "Morocco": {
+      "n_records": 23,
+      "yield_p25": 4.5,
+      "yield_median": 5.800000000000001,
+      "yield_p75": 6.8135,
+      "rainfall_mm": 346.0,
+      "pesticides_tonnes": 13697.0,
+      "avg_temp": 18.22,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          346.0,
+          346.0
+        ],
+        "pesticides_tonnes": [
+          9364.0,
+          15064.0
+        ],
+        "avg_temp": [
+          17.025,
+          18.85
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 346.0,
+        "pesticides_tonnes": 13697.0,
+        "avg_temp": 18.705,
+        "yield_t_ha": 7.5433
+      }
+    },
+    "Mozambique": {
+      "n_records": 23,
+      "yield_p25": 0.29165,
+      "yield_median": 0.8717,
+      "yield_p75": 0.98255,
+      "rainfall_mm": 1032.0,
+      "pesticides_tonnes": 102.26,
+      "avg_temp": 21.89,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1032.0,
+          1032.0
+        ],
+        "pesticides_tonnes": [
+          17.4,
+          1187.1
+        ],
+        "avg_temp": [
+          21.35,
+          22.6
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1032.0,
+        "pesticides_tonnes": 766.93,
+        "avg_temp": 21.37,
+        "yield_t_ha": 0.28240000000000004
+      }
+    },
+    "Nepal": {
+      "n_records": 23,
+      "yield_p25": 2.4135,
+      "yield_median": 2.6754000000000002,
+      "yield_p75": 2.77875,
+      "rainfall_mm": 1500.0,
+      "pesticides_tonnes": 122.04,
+      "avg_temp": 15.36,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1500.0,
+          1500.0
+        ],
+        "pesticides_tonnes": [
+          60.11,
+          454.53
+        ],
+        "avg_temp": [
+          14.5,
+          15.96
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1500.0,
+        "pesticides_tonnes": 454.53,
+        "avg_temp": 15.79,
+        "yield_t_ha": 3.1709
+      }
+    },
+    "Nicaragua": {
+      "n_records": 23,
+      "yield_p25": 3.2527500000000003,
+      "yield_median": 3.5103,
+      "yield_p75": 3.8617500000000002,
+      "rainfall_mm": 2280.0,
+      "pesticides_tonnes": 4373.1,
+      "avg_temp": 27.05,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          2280.0,
+          2280.0
+        ],
+        "pesticides_tonnes": [
+          575.0,
+          12242.19
+        ],
+        "avg_temp": [
+          26.73,
+          27.83
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 2280.0,
+        "pesticides_tonnes": 4413.82,
+        "avg_temp": 27.26,
+        "yield_t_ha": 4.968
+      }
+    },
+    "Niger": {
+      "n_records": 23,
+      "yield_p25": 2.7522,
+      "yield_median": 3.2828,
+      "yield_p75": 3.9701000000000004,
+      "rainfall_mm": 151.0,
+      "pesticides_tonnes": 29.44,
+      "avg_temp": 29.71,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          151.0,
+          151.0
+        ],
+        "pesticides_tonnes": [
+          7.32,
+          62.0
+        ],
+        "avg_temp": [
+          28.99,
+          30.42
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 151.0,
+        "pesticides_tonnes": 21.37,
+        "avg_temp": 30.42,
+        "yield_t_ha": 6.2834
+      }
+    },
+    "Pakistan": {
+      "n_records": 23,
+      "yield_p25": 2.7532,
+      "yield_median": 3.0192,
+      "yield_p75": 3.2459000000000002,
+      "rainfall_mm": 494.0,
+      "pesticides_tonnes": 6183.0,
+      "avg_temp": 24.751666666666665,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          494.0,
+          494.0
+        ],
+        "pesticides_tonnes": [
+          0.92,
+          27885.0
+        ],
+        "avg_temp": [
+          23.798333333333332,
+          25.448333333333334
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 494.0,
+        "pesticides_tonnes": 0.92,
+        "avg_temp": 25.448333333333334,
+        "yield_t_ha": 3.7528
+      }
+    },
+    "Papua New Guinea": {
+      "n_records": 23,
+      "yield_p25": 1.7957,
+      "yield_median": 1.9266,
+      "yield_p75": 1.9908000000000001,
+      "rainfall_mm": 3142.0,
+      "pesticides_tonnes": 105.0,
+      "avg_temp": 25.27,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          3142.0,
+          3142.0
+        ],
+        "pesticides_tonnes": [
+          105.0,
+          176.0
+        ],
+        "avg_temp": [
+          24.86,
+          26.05
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 3142.0,
+        "pesticides_tonnes": 105.0,
+        "avg_temp": 25.44,
+        "yield_t_ha": 2.0549
+      }
+    },
+    "Peru": {
+      "n_records": 23,
+      "yield_p25": 5.7378,
+      "yield_median": 6.5901000000000005,
+      "yield_p75": 7.09105,
+      "rainfall_mm": 1738.0,
+      "pesticides_tonnes": 8322.88,
+      "avg_temp": 17.26,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1738.0,
+          1738.0
+        ],
+        "pesticides_tonnes": [
+          3134.0,
+          18885.82
+        ],
+        "avg_temp": [
+          16.45,
+          18.62
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1738.0,
+        "pesticides_tonnes": 17942.97,
+        "avg_temp": 17.0,
+        "yield_t_ha": 7.711200000000001
+      }
+    },
+    "Portugal": {
+      "n_records": 23,
+      "yield_p25": 5.5931,
+      "yield_median": 5.8062000000000005,
+      "yield_p75": 5.9277,
+      "rainfall_mm": 854.0,
+      "pesticides_tonnes": 13984.91,
+      "avg_temp": 16.24,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          854.0,
+          854.0
+        ],
+        "pesticides_tonnes": [
+          6117.0,
+          17452.0
+        ],
+        "avg_temp": [
+          15.33,
+          17.23
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 854.0,
+        "pesticides_tonnes": 10126.8,
+        "avg_temp": 16.77,
+        "yield_t_ha": 5.9699
+      }
+    },
+    "Romania": {
+      "n_records": 23,
+      "yield_p25": 2.5434,
+      "yield_median": 3.2835,
+      "yield_p75": 4.3492,
+      "rainfall_mm": 637.0,
+      "pesticides_tonnes": 7875.7,
+      "avg_temp": 11.9,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          637.0,
+          637.0
+        ],
+        "pesticides_tonnes": [
+          6314.0,
+          25255.0
+        ],
+        "avg_temp": [
+          10.46,
+          13.94
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 637.0,
+        "pesticides_tonnes": 6947.9,
+        "avg_temp": 13.94,
+        "yield_t_ha": 4.7194
+      }
+    },
+    "Rwanda": {
+      "n_records": 23,
+      "yield_p25": 2.6435500000000003,
+      "yield_median": 3.298,
+      "yield_p75": 4.4758,
+      "rainfall_mm": 1212.0,
+      "pesticides_tonnes": 181.6,
+      "avg_temp": 19.6,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1212.0,
+          1212.0
+        ],
+        "pesticides_tonnes": [
+          72.0,
+          1841.5
+        ],
+        "avg_temp": [
+          19.22,
+          20.29
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1212.0,
+        "pesticides_tonnes": 1841.5,
+        "avg_temp": 19.93,
+        "yield_t_ha": 5.3362
+      }
+    },
+    "Senegal": {
+      "n_records": 23,
+      "yield_p25": 2.3354,
+      "yield_median": 2.4758,
+      "yield_p75": 3.0557,
+      "rainfall_mm": 686.0,
+      "pesticides_tonnes": 465.95,
+      "avg_temp": 25.34,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          686.0,
+          686.0
+        ],
+        "pesticides_tonnes": [
+          282.02,
+          787.83
+        ],
+        "avg_temp": [
+          24.7,
+          26.1
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 686.0,
+        "pesticides_tonnes": 722.53,
+        "avg_temp": 24.7,
+        "yield_t_ha": 4.0181000000000004
+      }
+    },
+    "South Africa": {
+      "n_records": 23,
+      "yield_p25": 2.2227500000000004,
+      "yield_median": 2.2962000000000002,
+      "yield_p75": 2.5191,
+      "rainfall_mm": 495.0,
+      "pesticides_tonnes": 26857.0,
+      "avg_temp": 18.516666666666666,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          495.0,
+          495.0
+        ],
+        "pesticides_tonnes": [
+          16582.0,
+          26857.0
+        ],
+        "avg_temp": [
+          18.043333333333333,
+          19.32
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 495.0,
+        "pesticides_tonnes": 26857.0,
+        "avg_temp": 18.096666666666668,
+        "yield_t_ha": 2.6087000000000002
+      }
+    },
+    "Spain": {
+      "n_records": 23,
+      "yield_p25": 6.7343,
+      "yield_median": 7.0657000000000005,
+      "yield_p75": 7.559150000000001,
+      "rainfall_mm": 636.0,
+      "pesticides_tonnes": 39043.0,
+      "avg_temp": 15.67,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          636.0,
+          636.0
+        ],
+        "pesticides_tonnes": [
+          27852.0,
+          54197.0
+        ],
+        "avg_temp": [
+          14.6,
+          16.386666666666667
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 636.0,
+        "pesticides_tonnes": 54197.0,
+        "avg_temp": 15.713333333333333,
+        "yield_t_ha": 7.7902000000000005
+      }
+    },
+    "Sri Lanka": {
+      "n_records": 23,
+      "yield_p25": 3.1468000000000003,
+      "yield_median": 3.5102,
+      "yield_p75": 3.6610500000000004,
+      "rainfall_mm": 1712.0,
+      "pesticides_tonnes": 1654.41,
+      "avg_temp": 26.59,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1712.0,
+          1712.0
+        ],
+        "pesticides_tonnes": [
+          1112.8,
+          2144.31
+        ],
+        "avg_temp": [
+          26.26,
+          27.13
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1712.0,
+        "pesticides_tonnes": 1235.31,
+        "avg_temp": 27.03,
+        "yield_t_ha": 3.8897000000000004
+      }
+    },
+    "Sudan": {
+      "n_records": 2,
+      "yield_p25": 3.20745,
+      "yield_median": 3.2403000000000004,
+      "yield_p75": 3.2731500000000002,
+      "rainfall_mm": 1712.0,
+      "pesticides_tonnes": 2469.47,
+      "avg_temp": 28.4675,
+      "ranges": {
+        "Year": [
+          2012.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1712.0,
+          1712.0
+        ],
+        "pesticides_tonnes": [
+          2469.47,
+          2469.47
+        ],
+        "avg_temp": [
+          28.19,
+          28.744999999999997
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1712.0,
+        "pesticides_tonnes": 2469.47,
+        "avg_temp": 28.744999999999997,
+        "yield_t_ha": 3.306
+      }
+    },
+    "Suriname": {
+      "n_records": 23,
+      "yield_p25": 3.7115,
+      "yield_median": 3.8156000000000003,
+      "yield_p75": 4.16115,
+      "rainfall_mm": 2331.0,
+      "pesticides_tonnes": 537.49,
+      "avg_temp": 27.19,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          2331.0,
+          2331.0
+        ],
+        "pesticides_tonnes": [
+          139.0,
+          2191.37
+        ],
+        "avg_temp": [
+          26.82,
+          27.7
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 2331.0,
+        "pesticides_tonnes": 537.49,
+        "avg_temp": 27.17,
+        "yield_t_ha": 4.4965
+      }
+    },
+    "Tajikistan": {
+      "n_records": 21,
+      "yield_p25": 2.4566000000000003,
+      "yield_median": 3.0707,
+      "yield_p75": 4.3558,
+      "rainfall_mm": 691.0,
+      "pesticides_tonnes": 264.6,
+      "avg_temp": 8.61,
+      "ranges": {
+        "Year": [
+          1992.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          691.0,
+          691.0
+        ],
+        "pesticides_tonnes": [
+          54.0,
+          2280.0
+        ],
+        "avg_temp": [
+          7.29,
+          10.1
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 691.0,
+        "pesticides_tonnes": 264.6,
+        "avg_temp": 10.1,
+        "yield_t_ha": 6.6592
+      }
+    },
+    "Thailand": {
+      "n_records": 23,
+      "yield_p25": 2.3943000000000003,
+      "yield_median": 2.8739000000000003,
+      "yield_p75": 2.9947500000000002,
+      "rainfall_mm": 1622.0,
+      "pesticides_tonnes": 24062.0,
+      "avg_temp": 27.8,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1622.0,
+          1622.0
+        ],
+        "pesticides_tonnes": [
+          8136.0,
+          88548.0
+        ],
+        "avg_temp": [
+          27.34,
+          28.98
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1622.0,
+        "pesticides_tonnes": 8136.0,
+        "avg_temp": 28.98,
+        "yield_t_ha": 3.1463
+      }
+    },
+    "Turkey": {
+      "n_records": 23,
+      "yield_p25": 5.0365,
+      "yield_median": 6.0492,
+      "yield_p75": 7.2101500000000005,
+      "rainfall_mm": 593.0,
+      "pesticides_tonnes": 30286.0,
+      "avg_temp": 14.986,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          593.0,
+          593.0
+        ],
+        "pesticides_tonnes": [
+          24219.0,
+          48715.51
+        ],
+        "avg_temp": [
+          13.486,
+          16.592000000000002
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 593.0,
+        "pesticides_tonnes": 39440.0,
+        "avg_temp": 16.558,
+        "yield_t_ha": 8.138
+      }
+    },
+    "Uganda": {
+      "n_records": 23,
+      "yield_p25": 1.3737,
+      "yield_median": 1.4000000000000001,
+      "yield_p75": 1.50695,
+      "rainfall_mm": 1180.0,
+      "pesticides_tonnes": 88.0,
+      "avg_temp": 23.75,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1180.0,
+          1180.0
+        ],
+        "pesticides_tonnes": [
+          59.0,
+          88.0
+        ],
+        "avg_temp": [
+          23.3,
+          24.29
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1180.0,
+        "pesticides_tonnes": 88.0,
+        "avg_temp": 24.13,
+        "yield_t_ha": 2.3011
+      }
+    },
+    "Ukraine": {
+      "n_records": 21,
+      "yield_p25": 3.5595000000000003,
+      "yield_median": 3.7746000000000004,
+      "yield_p75": 5.0859000000000005,
+      "rainfall_mm": 565.0,
+      "pesticides_tonnes": 42129.32,
+      "avg_temp": 8.42,
+      "ranges": {
+        "Year": [
+          1992.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          565.0,
+          565.0
+        ],
+        "pesticides_tonnes": [
+          15344.4,
+          90814.8
+        ],
+        "avg_temp": [
+          6.89,
+          10.33
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 565.0,
+        "pesticides_tonnes": 86781.8,
+        "avg_temp": 10.33,
+        "yield_t_ha": 5.9938
+      }
+    },
+    "Uruguay": {
+      "n_records": 23,
+      "yield_p25": 5.3408,
+      "yield_median": 6.583900000000001,
+      "yield_p75": 7.5703000000000005,
+      "rainfall_mm": 1300.0,
+      "pesticides_tonnes": 4433.04,
+      "avg_temp": 16.96,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1300.0,
+          1300.0
+        ],
+        "pesticides_tonnes": [
+          1634.02,
+          23506.4
+        ],
+        "avg_temp": [
+          15.92,
+          17.61
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1300.0,
+        "pesticides_tonnes": 19028.6,
+        "avg_temp": 15.92,
+        "yield_t_ha": 7.881200000000001
+      }
+    },
+    "Zambia": {
+      "n_records": 23,
+      "yield_p25": 0.98875,
+      "yield_median": 1.2426000000000001,
+      "yield_p75": 1.3792,
+      "rainfall_mm": 1020.0,
+      "pesticides_tonnes": 1670.0,
+      "avg_temp": 20.9,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          1020.0,
+          1020.0
+        ],
+        "pesticides_tonnes": [
+          716.0,
+          1670.0
+        ],
+        "avg_temp": [
+          20.14,
+          21.97
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 1020.0,
+        "pesticides_tonnes": 1670.0,
+        "avg_temp": 20.14,
+        "yield_t_ha": 1.1617
+      }
+    },
+    "Zimbabwe": {
+      "n_records": 23,
+      "yield_p25": 2.2361,
+      "yield_median": 2.2727,
+      "yield_p75": 2.3157,
+      "rainfall_mm": 657.0,
+      "pesticides_tonnes": 3094.08,
+      "avg_temp": 20.75,
+      "ranges": {
+        "Year": [
+          1990.0,
+          2013.0
+        ],
+        "rainfall_mm": [
+          657.0,
+          657.0
+        ],
+        "pesticides_tonnes": [
+          1664.0,
+          6753.0
+        ],
+        "avg_temp": [
+          19.76,
+          21.93
+        ]
+      },
+      "latest": {
+        "Year": 2013,
+        "rainfall_mm": 657.0,
+        "pesticides_tonnes": 2550.07,
+        "avg_temp": 19.76,
+        "yield_t_ha": 2.2581
+      }
+    }
+  },
+  "best_model": "Random Forest",
+  "selection_method": "Lowest mean 5-fold cross-validated RMSE on the training split (test data not used)",
+  "best_model_metrics": {
+    "MAE": 0.343876052159069,
+    "RMSE": 0.5054270105916552,
+    "R2": 0.9288692229690185
+  },
+  "best_model_temporal_metrics": {
+    "MAE": 0.6687125363753715,
+    "RMSE": 0.9244186054404477,
+    "R2": 0.7996561615860515
+  },
+  "all_models": [
+    {
+      "model": "Linear Regression",
+      "cv": {
+        "MAE": 0.4727449368775785,
+        "MAE_std": 0.02523310362439742,
+        "RMSE": 0.6889026807192826,
+        "RMSE_std": 0.05442750078142082,
+        "R2": 0.872382792623865,
+        "R2_std": 0.025071832669814456
+      },
+      "random_holdout": {
+        "MAE": 0.48056754720896555,
+        "RMSE": 0.6676379700146821,
+        "R2": 0.875885445110956
+      },
+      "temporal_holdout": {
+        "MAE": 0.7172540266615817,
+        "RMSE": 1.0051087017168303,
+        "R2": 0.7631547384313982
+      }
+    },
+    {
+      "model": "Decision Tree",
+      "cv": {
+        "MAE": 0.48301007795773965,
+        "MAE_std": 0.047792922002270546,
+        "RMSE": 0.7140268882452518,
+        "RMSE_std": 0.09395355625840426,
+        "R2": 0.8613409943581571,
+        "R2_std": 0.039020225267815664
+      },
+      "random_holdout": {
+        "MAE": 0.4687747806431055,
+        "RMSE": 0.686840140065367,
+        "R2": 0.868643371075328
+      },
+      "temporal_holdout": {
+        "MAE": 0.7511676176290049,
+        "RMSE": 1.0384288341535646,
+        "R2": 0.7471912437148598
+      }
+    },
+    {
+      "model": "Random Forest",
+      "cv": {
+        "MAE": 0.37539739743584377,
+        "MAE_std": 0.03197024911992137,
+        "RMSE": 0.5613854377637766,
+        "RMSE_std": 0.07452988324267337,
+        "R2": 0.9143882418262592,
+        "R2_std": 0.02324606559957316
+      },
+      "random_holdout": {
+        "MAE": 0.343876052159069,
+        "RMSE": 0.5054270105916552,
+        "R2": 0.9288692229690185
+      },
+      "temporal_holdout": {
+        "MAE": 0.6687125363753715,
+        "RMSE": 0.9244186054404477,
+        "R2": 0.7996561615860515
+      }
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv": {
+        "MAE": 0.5213065150240567,
+        "MAE_std": 0.0336453369850916,
+        "RMSE": 0.7008078663639515,
+        "RMSE_std": 0.06891858963206314,
+        "R2": 0.8675300629868417,
+        "R2_std": 0.029166899999811556
+      },
+      "random_holdout": {
+        "MAE": 0.5178536746780215,
+        "RMSE": 0.6688355158132264,
+        "R2": 0.8754397959052234
+      },
+      "temporal_holdout": {
+        "MAE": 0.7487069825690381,
+        "RMSE": 0.9997090213257964,
+        "R2": 0.7656926797842292
+      }
+    },
+    {
+      "model": "Country-average baseline",
+      "cv": {
+        "MAE": 0.5748610576907645,
+        "MAE_std": 0.03888799594724589,
+        "RMSE": 0.8060932912726179,
+        "RMSE_std": 0.06388408588430344,
+        "R2": 0.8253081510257353,
+        "R2_std": 0.033486658697388996
+      },
+      "random_holdout": {
+        "MAE": 0.5490833918910083,
+        "RMSE": 0.7532970261155252,
+        "R2": 0.8419941509281983
+      },
+      "temporal_holdout": {
+        "MAE": 0.9562746456016374,
+        "RMSE": 1.2333001055478006,
+        "R2": 0.6434042424837382
+      }
+    }
+  ],
+  "baseline_country_mean": {
+    "MAE": 0.5490833918910083,
+    "RMSE": 0.7532970261155252,
+    "R2": 0.8419941509281983
+  },
+  "baseline_country_mean_temporal": {
+    "MAE": 0.9562746456016374,
+    "RMSE": 1.2333001055478006,
+    "R2": 0.6434042424837382
+  },
+  "n_records": 1502,
+  "n_train": 1201,
+  "n_test": 301,
+  "temporal_split": {
+    "cutoff_year": 2008,
+    "train_years": [
+      1990,
+      2008
+    ],
+    "test_years": [
+      2009,
+      2013
+    ],
+    "n_train": 1170,
+    "n_test": 332,
+    "countries_only_in_test_years": [
+      "Sudan"
+    ]
+  },
+  "training": {
+    "random_state": 42,
+    "cv_folds": 5,
+    "test_size": 0.2,
+    "sklearn_version": "1.9.1",
+    "trained_at_utc": "2026-10-07 02:54:27",
+    "note": "The saved model is fitted on the random training split only, so the reported hold-out metrics describe exactly the model that is served."
+  },
+  "cleaning_log": {
+    "raw_rows": 28242,
+    "raw_columns": 7,
+    "rice_rows": 3388,
+    "exact_duplicates_removed": 297,
+    "missing_values_rice": 0,
+    "max_distinct_yield_within_country_year": 1,
+    "max_distinct_rainfall_within_country_year": 1,
+    "max_distinct_pesticides_within_country_year": 1,
+    "country_years_with_varying_temperature": 460,
+    "repeated_rows_collapsed": 1589,
+    "rows_after_aggregation": 1502,
+    "sanity_rows_removed": 0,
+    "final_rows": 1502,
+    "countries": 68,
+    "year_min": 1990,
+    "year_max": 2013,
+    "years_missing_in_range": [
+      2003
+    ]
+  },
+  "sklearn_version": "1.9.1",
+  "dataset": {
+    "name": "Crop Yield Prediction Dataset (file: yield_df.csv)",
+    "source": "Kaggle dataset by owner 'patelris'. Dataset descriptions on mirror sites credit FAO and the World Bank as original sources; the per-variable mapping is not documented, so it is not claimed here",
+    "url": "https://www.kaggle.com/datasets/patelris/crop-yield-prediction-dataset",
+    "subset": "Rice, paddy",
+    "raw_rows": 28242,
+    "rice_rows": 3388,
+    "unique_country_years": 1502,
+    "countries": 68,
+    "year_range": [
+      1990,
+      2013
+    ]
+  }
+}
